@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1017"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="الملف الشخصي"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="60dp"
+        app:cardBackgroundColor="#1B1D2A">
+        <ImageView
+            android:id="@+id/img_profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:padding="30dp"
+            app:tint="#FFFFFF" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/et_profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:hint="الاسم الكامل"
+        android:background="@drawable/custom_input"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"/>
+
+    <EditText
+        android:id="@+id/et_profile_email"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:hint="البريد الإلكتروني"
+        android:background="@drawable/custom_input"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/et_profile_phone"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:hint="رقم الهاتف"
+        android:background="@drawable/custom_input"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/btn_update_profile"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:text="تحديث البيانات"
+        android:backgroundTint="#FF0000"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="15dp"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="تسجيل الخروج"
+        android:backgroundTint="#3D3D3D"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="15dp"/>
+
+</LinearLayout>
